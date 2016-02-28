@@ -1,0 +1,15 @@
+h1{
+    color:red;
+}
+
+header{
+    height: 600px;
+    background-image: url('img/img-principal')
+}
+
+
+
+.full-width{
+    width: 100%;
+    background-color: grey;
+}
