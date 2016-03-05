@@ -1,15 +1,476 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+
 h1{
-    color:red;
+    color:black;
+    padding-bottom: 5px;
+    border-bottom: 4px solid #a8c918;
+    display: inline-block;
+    font-size:4em;
+    margin-bottom: 30px;
+}
+
+h2{
+    font-size: 3em;
+}
+
+h3{
+    color: white;
+    text-align: center;
+}
+
+#fechabloque h3{
+    padding-top: 30%;
+    font-size: 2.5em;
+    width: 100%;
+}
+
+#fechabloque h2{
+    font-size: 3.5em;
+    text-align: center;
+}
+
+#fechabloque span{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+
+#bloque h2{
+    text-align: center;
+}
+
+i{
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.top{
+    margin-top:15px;
+}
+
+span#subtitulo{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
 }
 
 header{
-    height: 600px;
-    background-image: url('img/img-principal')
+    height: 650px;
+    background-image: url('../img/img-principal.jpg');
+    background-size: cover;
+}
+
+/*Menú*/
+
+#main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 99;
+
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.01);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#11000000, endColorstr=#11000000)";
+
+
+	-moz-box-shadow: 0 1px 5px #999;
+	-webkit-box-shadow: 0 1px 5px #999;
+	box-shadow: 0 1px 5px #999;
+}
+
+#menu{
+    height: 190px;;
+}
+
+#main-logo {
+	width: 100%;
+	height: 80px;
+	padding: 2px 0 0 20px;
+	margin: 0;
+	background-color: #A3D900;
+}
+
+#logoMenu{
+    width: 100%;
+    height: 120px;
+    background: url('../img/logo.png');
+    background-size: cover;
 }
 
 
 
+/* *************************************
+* *********** Menú de Navegación **********
+* ************************************ */
+#main-menu {
+	float:right;
+	margin-top: 40px;
+    background-color: rgba(1,1,1,0.1);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+#main-menu a {
+	color: #aaa;
+    background-color: rgba(255,255,255,0);
+}
+
+#main-menu a:hover {
+    background-color: rgba(255, 255, 255, 0);
+	color: #a8c918;
+}
+
+
+#mobile-menu-button {
+	float: right;
+	width: 44px;
+	margin: 20px 0;
+}
+
+#mobile-main-menu {
+	display: none;
+}
+
+#mobile-main-menu a {
+	display: block;
+	width: 100%;
+	padding: 10px 0;
+	border-top: 1px solid #eee;
+	color: #aaa;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+#mobile-main-menu li {
+	margin: 0;
+}
+
+#mobile-main-menu a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #a3d900;
+}
+
+#mensajeBanner{
+   margin-top: 300px;
+}
+
+#mensajeBanner h2{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+#contador{
+    height: 100%;
+    background-color: #614AB2;
+}
+
+#contador h2{
+    color: #FFF;
+}
+
+/* ----------------  Descripción  ----------------*/
+
+#descripcion{
+    background-color: white;
+    height: 100%;
+    display: block;
+}
+
+#logoEvento{
+    width: 100%;
+    height: 200px;
+    background: url('../img/logo.png');
+    background-size: cover;    
+}
+
+
+
+
+#bloque{
+    background-color: #a8c918;
+}
+
+/* ----------------  AGENDA   ----------------*/
+
+#agenda{
+    color: white;
+    background-color: black;
+    height: 100%;
+    padding: 50px 0px;
+}
+
+
+
+#agenda h1{
+    color: white;
+    text-align: center;
+}
+
+#fechabloque h2{
+    color: #a8c918;
+}
+
+.itinerario{
+    width: 100%;
+    height: 400px;
+    border: 2px solid #a8c918;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.nombre, .hora{
+    font-size: 16px;    
+    /*line-height: 26px]*/
+}
+
+.hora{
+    color: #a8c918;
+}
+
+.brake-bottom{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.brake-top{
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.nombre{
+    margin-bottom: 10px;
+}
+
+.center{
+    text-align: center;
+}
+
+.white{
+    color: white;
+}
+
+
+
+
+
+
+#dir{
+    height: 300px;
+    background-image: url('../img/la-pizarra.jpg');
+    background-size: cover;    
+}
+
+#asistirEvento{
+    background-color: white;
+    height: 100%;
+}
+
+
+#ticket{
+    background: url('../img/ticket.jpg');
+    margin-top: 6%; 
+    width: 700px;
+    position: absolute;
+    left: -24%;
+    height: 250px;
+    background-size: cover;   
+}
+
+
+.padding{
+    padding: 40px 0;
+}
+
 .full-width{
     width: 100%;
-    background-color: grey;
+    background-color: black;
+}
+
+
+
+
+.faltan {
+font-family: Berlin Sans FB Demi;
+font-size: 50px;
+color: #ffffff;
+background-color: #000000;
+text-align: center;
+font-weight: bold;
+}
+
+/* *************************************
+* *************** Footer ***************
+* ************************************ */
+footer {
+	padding: 30px 0;
+	background-color: black;;
+}
+
+footer a, footer a:hover {
+	color: #fff;
+	font-weight: 400;
+}
+
+footer h3 {
+	margin-top: 20px;
+    margin-bottom: 15px;
+	color: #fff;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+    text-align: left;
+    border-bottom: 2px solid #614AB2;
+    padding-bottom: 8px;
+    display: inline-block;    
+    font-size: 1.4em;
+}
+
+footer h2{
+    text-align: left;
+}
+
+footer h4{
+    color:white;
+}
+
+footer p {
+	color: white;
+    margin-top: 1px;
+    font-size: 1.2em;
+    line-height: 16px;
+}
+
+
+#subscribe-form input {
+	padding: 0 24px;
+	border: 0;
+
+	color: #ccc;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 300;
+	line-height: normal;
+	background-color: #222;
+}
+
+#subscribe-form button {
+	width: 100%;
+	color: #444;
+	background-color: #eee;
+	line-height: 24px;    
+}
+
+/* *************************************
+* *************** Generales ************
+* ************************************ */
+.btn-custom {
+	border: 0;
+	border-radius: 2px;
+
+	font-size: 14px;
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+
+
+/*Iconos*/
+.list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+.list-inline li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+	margin-bottom: 10px;
+}
+/*---- Clases Generales-----*/
+
+/*Tamaño de icono*/
+.social-icons .fa {
+	font-size: 1.8em;
+}
+/*Tamaño de circulo y transición*/
+.social-icons .fa {
+	width: 50px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: #FFF;
+	color: rgba(255, 255, 255, 0.8);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-icons.icon-circle .fa{ 
+	border-radius: 50%;
+}
+
+.social-icons.icon-zoom .fa:hover, .social-icons.icon-zoom .fa:active { 
+ 	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+
+.social-icons .fa-facebook,.social-icons .fa-facebook-square{background-color:#3C599F;}  
+.social-icons .fa-instagram{background-color:#A1755C;}
+.social-icons .fa-twitter,.social-icons .fa-twitter-square{background-color:#32CCFE;} 
+
+
+@media (max-width: 991px){
+    #ticket{
+        display: none;
+    }
+    #fechabloque h3{
+        padding: 0px;
+        font-size: 2.5em;        
+}
+    #fechabloque{
+        padding-bottom: 15px;
+    }
+    header{
+        height: 300px;
+    }
+    
+}
+
+@media (max-width: 1200px){
+    #ticket{
+        left: -38%;;
+    }
+}
+
+@media (min-width: 1300px){
+    #ticket{
+        left: -20%;;
+    }
+}
+
+@media (min-width: 1360px){
+    #ticket{
+        left: -12%;;
+    }
 }
