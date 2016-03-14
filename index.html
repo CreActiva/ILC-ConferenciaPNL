@@ -83,10 +83,11 @@
     <div id="contador" class="full-width padding">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-8">
+                <div class="col-xs-12 col-sm-12 col-md-8">
                     <h2>Días para el evento</h2>
                 </div>
-                <div class="col-xs-12 col-md-4">
+                <div class="col-xs-12 col-sm-12 col-md-4">
+                <div id="padding-derecho">
                 <script>
                     TargetDate = "04/09/2016 8:00 AM";
                     BackColor = "#614AB2";
@@ -94,9 +95,9 @@
                     CountActive = true;
                     CountStepper = -1;
                     LeadingZero = true;
-                    DisplayFormat = "%%D%% : %%H%% : %%M%% : %%S%% ";
-                    FinishMessage = "Ya comenzó el evento";
-
+                    DisplayFormat = "%%D%%" + "<span id='dias'>Días</span>" + "%%H%%" + "<span id='dias'>Horas</span>" + "%%M%%" + "<span id='dias'>Minutos</span>" +  "%%S%%" + "<span id='dias'>segundos</span>";
+                    FinishMessage = "Ya comenzó el evento";                
+                    
 function calcage(secs, num1, num2) {
   s = ((Math.floor(secs/num1))%num2).toString();
   if (LeadingZero && s.length < 2)
@@ -155,6 +156,7 @@ else
   ddiff = new Date(dthen-dnow);
 gsecs = Math.floor(ddiff.valueOf()/1000);
     CountBack(gsecs);</script>
+                   </div>
                 </div>
             </div>
         </div>
@@ -220,32 +222,32 @@ gsecs = Math.floor(ddiff.valueOf()/1000);
                     <div class="itinerario">
                         <h3>Bloque A</h3>
                         <div class="hora">8:30 - 9:15 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Vicente Ciampa</div>
+                        <div class="nombre">G.P.S Guía para Soñar - Vicente Ciampa</div>
                         <div class="hora">9:15 - 10:00 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Marvelis García</div>
+                        <div class="nombre">Sin hijos pero completa - Marvelis García</div>
                         <div class="hora brake-top">10:00  - 10:15 am</div>
                         <div class="nombre brake-bottom">Brake</div>
                         <div class="hora">10:15 - 11:00 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Doris Rivero</div>
+                        <div class="nombre">La primera vez - Doris Rivero</div>
                         <div class="hora">11:00 - 11:45 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Marlon Botini</div>
+                        <div class="nombre">De Perico a Aguila: Volando sin mis adicciones - Marlon Botini</div>
                         <div class="hora">11:45 - 12:30 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Adriana German</div>
+                        <div class="nombre">Inteligencia Corporal: El movimiento acompasando tu éxito - Adriana German</div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
                     <div class="itinerario">
                         <h3>Bloque B</h3>
                         <div class="hora">2:00 - 2:45 pm</div>
-                        <div class="nombre">Nombre de la Conferencia - Dixon Cedeño</div>
+                        <div class="nombre">De las botas a los Mocacines: Gestionando mi proceso de adaptación - Dixon Cedeño</div>
                         <div class="hora">2:45 - 3:30 pm</div>
-                        <div class="nombre">Nombre de la Conferencia - Yuraima Morantes</div>
+                        <div class="nombre">Ya tengo el sueño!. ¿Ahora quien podrá ayudarme?: Herramientas para el logro de tu programa de vida - Yuraima Morantes</div>
                         <div class="hora brake-top">3:30  - 3:45 pm</div>
                         <div class="nombre brake-bottom">Brake</div>
                         <div class="hora">3:45 - 4:30 pm</div>
-                        <div class="nombre">Nombre de la Conferencia - Silene Garcia</div>
+                        <div class="nombre">Me pegas o me pego - Silene Garcia</div>
                         <div class="hora">4:30 - 5:15 am</div>
-                        <div class="nombre">Nombre de la Conferencia - José Humberto Rodriguez</div>                        
+                        <div class="nombre">Hijo de divorciados. Felizmente casado - José Humberto Rodriguez</div>                        
                     </div>
                 </div>
             </div>
@@ -261,32 +263,32 @@ gsecs = Math.floor(ddiff.valueOf()/1000);
                     <div class="itinerario">
                         <h3>Bloque C</h3>
                         <div class="hora">8:30 - 9:15 am</div>
-                        <div class="nombre">Nombre de la Conferencia - MAría Mercedes</div>
+                        <div class="nombre">Ni Barbie, ni G.I Joe: La mujer en las organizaciones - María Mercedes Vega</div>
                         <div class="hora">9:15 - 10:00 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Carlos Pacheco</div>
+                        <div class="nombre">El Triángulo del Poder: Atrévete a cambiar un hábito - Carlos Pacheco</div>
                         <div class="hora brake-top">10:00  - 10:15 am</div>
                         <div class="nombre brake-bottom">Brake</div>
                         <div class="hora">10:15 - 11:00 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Marybel Leandro</div>
+                        <div class="nombre">La memoria está en tu cuerpo - Marybel Leandro</div>
                         <div class="hora">11:00 - 11:45 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Alain Contreras</div>
+                        <div class="nombre">De Carbon a Diamante - Alain Contreras</div>
                         <div class="hora">11:45 - 12:30 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Evelyn Salazar</div>
+                        <div class="nombre">A la tercera va la vencida: Rompiendo lealtades invisibles - Evelyn Salazar</div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4 col-md-pull-4">
                     <div class="itinerario">
                         <h3>Bloque D</h3>
                         <div class="hora">2:00 - 2:45 pm</div>
-                        <div class="nombre">Nombre de la Conferencia - Elena Padrino</div>
+                        <div class="nombre">Palabras que sanan - Elena Padrino</div>
                         <div class="hora">2:45 - 3:30 pm</div>
                         <div class="nombre">Nombre de la Conferencia - Alejandro Mosquera</div>
                         <div class="hora brake-top">3:30  - 3:45 pm</div>
                         <div class="nombre brake-bottom">Brake</div>
                         <div class="hora">3:45 - 4:30 pm</div>
-                        <div class="nombre">Nombre de la Conferencia - Manauri Istariz</div>
+                        <div class="nombre">Papás motivadores, niños triunfadores - Manauri Istariz</div>
                         <div class="hora">4:30 - 5:15 am</div>
-                        <div class="nombre">Nombre de la Conferencia - Samuel González</div>                        
+                        <div class="nombre">creActivate: Ideas que encienden el Emprendimiento - Samuel González</div>                        
                     </div>
                 </div>
                 
@@ -309,8 +311,7 @@ gsecs = Math.floor(ddiff.valueOf()/1000);
         </div>
     </div>
     
-    
-    <div id="asistirEvento" class="full-width padding">
+<div id="asistirEvento" class="full-width padding">
     <div id="ticket" class=".hidden-sm-down"></div>
         <div class="container">
             <div class="row">
@@ -320,10 +321,11 @@ gsecs = Math.floor(ddiff.valueOf()/1000);
                 <div class="col-xs-12 col-md-8">
                     <h1>Para asistir al Evento</h1>
                     <p>Deposita al número de cuenta: 0114-0546-12-5469014004. </p>
+                    <p>Cuenta Corriente - Bancaribe. </p>
                     <p>María Mercedes Vega. </p>
                     <p>CI. 17.705.946 </p>
-                    <p>mmercedes.vega@gmail.com </p>
-                    <p>Llena el formulario.</p> 
+                    <p>semillasluz18@gmail.com</p>
+                    <p><a href="http://goo.gl/forms/bJ4IvQgpOF" target="_blank">Llena el formulario.</a></p>                     
                     <p>Espera tu entrada vía mail. </p>
                     <spam>El costo de la entrada es de 800Bs por bloque</spam>
                 </div>                
@@ -338,7 +340,7 @@ gsecs = Math.floor(ddiff.valueOf()/1000);
 		    <div class="clearfix"></div>
 		    <div class="col-xs-12 col-sm-4 info-contacto">
 				<h3>Información de Contacto</h3>
-				<p>Números de Teléfonos: 0212-730-14-90</p>
+				<p>Números de Teléfonos: 0212 2376273</p>
                 <p>Email: semillasdeluz8@gmail.com</p>			
 	  	        <ul class="social-icons icon-circle icon-zoom list-unstyled list-inline top"> 
                     <li> <a href="#"><i class="fa fa-facebook"></i></a></li>  
